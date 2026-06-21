@@ -3,151 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zedagim Tesfaye Tantu | Digital Irrigation Intelligence</title>
-    <!-- Tailwind CSS Engine -->
+    <title>Zedagim Tesfaye Tantu | Digital Irrigation Intelligence Portfolio</title>
+    <!-- Tailwind CSS for rapid fluid layouts -->
     <script src="https://tailwindcss.com"></script>
     <!-- FontAwesome Vector Icons -->
     <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         html { scroll-behavior: smooth; }
         
-        /* Continuous Orbiting Planet/Land Scanning Rotation Vector Engine */
-        .rotating-land-vector {
-            animation: continuousOrbitalRotation 45s linear infinite;
-            transform-style: preserve-3d;
+        /* High-Tech Animated Satellite Scanning Grid */
+        .satellite-grid {
+            background-image: 
+                radial-gradient(rgba(16, 185, 129, 0.15) 2px, transparent 2px), 
+                linear-gradient(rgba(15, 23, 42, 0.98), rgba(15, 23, 42, 0.90));
+            background-size: 40px 40px, 100% 100%;
+            animation: gridMove 30s linear infinite;
         }
-        @keyframes continuousOrbitalRotation {
+        @keyframes gridMove {
+            0% { background-position: 0px 0px, 0 0; }
+            100% { background-position: 40px 40px, 0 0; }
+        }
+
+        /* 3D Pure Code Rotating Earth/Farmland Simulation Matrix */
+        .rotating-globe-matrix {
+            border: 3px dashed rgba(16, 185, 129, 0.4);
+            box-shadow: 0 0 70px rgba(16, 185, 129, 0.25), inset 0 0 50px rgba(16, 185, 129, 0.15);
+            animation: spinGlobe 30s linear infinite;
+        }
+        .rotating-globe-matrix::before {
+            content: '';
+            position: absolute;
+            inset: 15px;
+            border: 2px dashed rgba(52, 211, 153, 0.3);
+            border-radius: 50%;
+            animation: spinGlobeReverse 20s linear infinite;
+        }
+        @keyframes spinGlobe {
             0% { transform: rotate(0deg) scale(1); }
-            50% { transform: rotate(180deg) scale(1.05); }
+            50% { transform: rotate(180deg) scale(1.03); }
             100% { transform: rotate(360deg) scale(1); }
         }
-
-        /* Technical Satellite Mesh Background Grid */
-        .telemetry-grid {
-            background-image: 
-                radial-gradient(rgba(16, 185, 129, 0.12) 2px, transparent 2px), 
-                linear-gradient(to bottom, #020617, #0f172a);
-            background-size: 50px 50px, 100% 100%;
+        @keyframes spinGlobeReverse {
+            0% { transform: rotate(360deg); }
+            100% { transform: rotate(0deg); }
         }
 
-        /* Glassmorphism Structural Cards */
-        .glass-card {
+        /* Modern Glassmorphic Container Cards */
+        .glass-container {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(226, 232, 240, 0.8);
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .glass-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 22px 45px rgba(15, 23, 42, 0.08);
-            border-color: rgba(16, 185, 129, 0.3);
+        .glass-container:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
         }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-    <!-- TOP CONTROL NAVIGATION FRAMEWORK -->
+    <!-- TOP NAVIGATION MODULE -->
     <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#home" class="text-lg font-bold text-emerald-600 tracking-tight flex items-center gap-2">
+            <a href="#" class="text-lg font-bold text-emerald-600 tracking-tight flex items-center gap-2">
                 <i class="fa-solid fa-satellite-dish animate-pulse"></i> Digital Irrigation Intelligence
             </a>
-            <div class="hidden lg:flex space-x-7 text-sm font-semibold text-slate-600">
-                <a href="#home" class="hover:text-emerald-600 transition">Home</a>
-                <a href="#credentials" class="hover:text-emerald-600 transition">Credentials</a>
-                <a href="#portals" class="hover:text-emerald-600 transition">Geospatial Portals</a>
-                <a href="#mission" class="hover:text-emerald-600 transition">Our Mission</a>
-                <a href="#contact" class="hover:text-emerald-600 transition">Contact Infrastructure</a>
+            <div class="hidden lg:flex space-x-8 text-sm font-semibold tracking-wide">
+                <a href="#home" class="text-slate-600 hover:text-emerald-600 transition">Home</a>
+                <a href="#credentials" class="text-slate-600 hover:text-emerald-600 transition">Credentials</a>
+                <a href="#portals" class="text-slate-600 hover:text-emerald-600 transition">Geospatial Portals</a>
+                <a href="#mission" class="text-slate-600 hover:text-emerald-600 transition">Our Mission</a>
+                <a href="#contact" class="bg-emerald-600 text-white px-5 py-2.5 rounded-full hover:bg-emerald-700 transition shadow-md shadow-emerald-200">Contact Infrastructure</a>
             </div>
-            <a href="#contact" class="hidden sm:inline-block bg-emerald-600 text-white text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-lg hover:bg-emerald-700 transition shadow-md shadow-emerald-200">
-                Initiate Consultation
-            </a>
         </div>
     </nav>
 
-    <!-- HERO PANEL INTERFACE -->
-    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden telemetry-grid pt-20">
-        
-        <!-- Rotating Visual Centerpiece -->
+    <!-- HERO PROFILE DISPLAY (HOME) -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden satellite-grid pt-20">
+        <!-- Floating Rotating Vector Globe Anchor Simulation -->
         <div class="absolute inset-0 z-0 pointer-events-none flex items-center justify-center">
-            <div class="rotating-land-vector w-[85vw] h-[85vw] md:w-[50vw] md:h-[50vw] rounded-full border-2 border-dashed border-emerald-500/20 flex items-center justify-center relative">
-                <!-- Inner Scanning Rings and River flow representation vectors -->
-                <div class="absolute inset-12 border border-emerald-400/10 rounded-full animate-ping"></div>
-                <div class="absolute inset-24 border-2 border-dashed border-emerald-400/30 rounded-full"></div>
-                <i class="fa-solid fa-earth-africa text-emerald-500/[0.04] text-[20rem] md:text-[28rem]"></i>
+            <div class="rotating-globe-matrix w-[80vw] h-[80vw] md:w-[48vw] md:h-[48vw] rounded-full relative flex items-center justify-center">
+                <div class="absolute inset-0 bg-gradient-to-tr from-emerald-500/10 via-transparent to-teal-500/10 rounded-full animate-pulse"></div>
+                <div class="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-emerald-400 to-transparent animate-bounce opacity-40"></div>
+                <i class="fa-solid fa-earth-africa text-emerald-500/5 text-9xl md:text-[16rem]"></i>
             </div>
         </div>
         
-        <!-- Dynamic Gradient Overlay Shield -->
-        <div class="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/70 to-slate-950 z-1"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-slate-950 z-1"></div>
 
-        <!-- Hero Content Display Matrix -->
-        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center text-white mt-12">
-            <span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full">
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center text-white my-auto">
+            <span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full inline-block">
                 Global Engineering Portfolio
             </span>
-            <h1 class="mt-6 text-4xl md:text-7xl font-black tracking-tight text-white">
+            <h1 class="mt-6 text-4xl md:text-7xl font-black tracking-tight leading-tight">
                 Zedagim Tesfaye Tantu
             </h1>
             <p class="mt-4 text-lg md:text-2xl text-slate-300 font-light max-w-3xl mx-auto tracking-wide">
                 Water Resources & Irrigation Engineer | Satellite Geospatial Data Architect
             </p>
-            <p class="mt-6 text-emerald-400 font-medium text-base md:text-lg max-w-3xl mx-auto border-l-4 border-emerald-500 pl-4 text-left leading-relaxed">
-                "Eliminating structural and linguistic barriers within geospatial tracking frameworks. Transforming real-time orbital sensor array data directly into actionable land diagnostics for local farmers, sovereign ministries, and global NGOs."
-            </p>
+            <div class="mt-8 max-w-3xl mx-auto bg-slate-900/60 backdrop-blur-md p-6 rounded-2xl border border-slate-800/80 shadow-2xl text-left md:text-center">
+                <p class="text-emerald-400 font-medium text-base md:text-lg leading-relaxed">
+                    "Eliminating structural and linguistic barriers within geospatial tracking frameworks. Transforming real-time orbital sensor array data directly into actionable land diagnostics for local farmers, sovereign ministries, and global NGOs."
+                </p>
+            </div>
             <div class="mt-10 flex flex-wrap gap-4 justify-center">
-                <a href="#portals" class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold px-8 py-4 rounded-lg transition shadow-lg shadow-emerald-900/50 tracking-wide">
-                    Explore Analytical Portals
-                </a>
-                <a href="#contact" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 text-sm font-bold px-8 py-4 rounded-lg transition tracking-wide">
-                    Initiate Consultation
-                </a>
+                <a href="#portals" class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold uppercase tracking-wider px-8 py-4 rounded-xl transition shadow-lg shadow-emerald-900/40">Explore Analytical Portals</a>
+                <a href="#contact" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 text-sm font-bold uppercase tracking-wider px-8 py-4 rounded-xl transition">Initiate Consultation</a>
             </div>
         </div>
     </section>
 
-    <!-- CREDENTIALS & HONORS PANEL -->
-    <section id="credentials" class="py-28 px-6 max-w-7xl mx-auto relative z-20">
-        <div class="border-b border-slate-200 pb-8 mb-16">
-            <h2 class="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">Academic Honors & Global Diplomacy</h2>
-            <p class="mt-2 text-slate-600 text-lg font-medium">Merging top-tier hydrological matrix calculation models with strategic root-cause interview frameworks.</p>
+    <!-- CREDENTIALS & ACADEMIC HONORS SECTION -->
+    <section id="credentials" class="py-28 px-6 max-w-7xl mx-auto scroll-mt-12">
+        <div class="text-center max-w-3xl mx-auto mb-20">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">Academic Honors & Global Diplomacy</h2>
+            <p class="mt-3 text-slate-600">Merging top-tier hydrological matrix calculation models with strategic root-cause interview frameworks.</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <!-- Academic Merits -->
-            <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+            <!-- Educational Framework Card -->
+            <div class="glass-container p-8 rounded-2xl shadow-sm flex flex-col justify-between">
                 <div>
-                    <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center mb-6 text-xl shadow-inner">
+                    <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center mb-6 text-xl">
                         <i class="fa-solid fa-graduation-cap"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900">Education & Academic Honors</h3>
-                    <p class="mt-4 text-slate-700 font-bold text-emerald-600 text-base">B.Sc. Water Resources & Irrigation Engineering</p>
-                    <p class="mt-1 text-2xl font-black text-slate-800">CGPA: 3.87 / 4.0</p>
-                    <span class="text-xs font-bold text-slate-400 uppercase tracking-wider block mt-1">(96.75% Institutional Equivalence Rating)</span>
+                    <p class="mt-4 text-slate-600 font-semibold text-emerald-600 text-sm tracking-wide uppercase">B.Sc. Water Resources & Irrigation Engineering</p>
+                    <p class="mt-2 text-3xl font-black text-slate-800 tracking-tight">CGPA: 3.87 / 4.0</p>
+                    <span class="text-xs bg-emerald-50 text-emerald-700 px-2 py-1 rounded font-semibold mt-1 inline-block">96.75% Institutional Equivalence Rating</span>
                     
-                    <h4 class="mt-6 text-xs font-bold text-slate-400 uppercase tracking-wider">Core Curricular Mastery</h4>
-                    <ul class="mt-3 space-y-2.5 text-sm text-slate-600 font-medium">
+                    <h4 class="mt-8 font-bold text-xs text-slate-400 uppercase tracking-widest border-b pb-2">Core Curricular Mastery</h4>
+                    <ul class="mt-4 space-y-2.5 text-sm text-slate-600 font-medium">
                         <li><i class="fa-solid fa-square-poll-vertical text-emerald-500 mr-2"></i> GIS & Remote Atmospheric Sensing</li>
                         <li><i class="fa-solid fa-droplet text-emerald-500 mr-2"></i> Irrigation Water Management Matrix</li>
-                        <li><i class="fa-solid fa-compass-drafting text-emerald-500 mr-2"></i> AutoCAD Hydrological System Architectures</li>
-                        <li><i class="fa-solid fa-shower text-emerald-500 mr-2"></i> Advanced Drip & Sprinkler Pipeline Design</li>
-                        <li><i class="fa-solid fa-folder-tree text-emerald-500 mr-2"></i> Project Planning & Infrastructure Management</li>
-                        <li><i class="fa-solid fa-faucet text-emerald-500 mr-2"></i> Water Supply Engineering Blueprints</li>
+                        <li><i class="fa-solid fa-laptop-code text-emerald-500 mr-2"></i> Water Software Applications</li>
+                        <li><i class="fa-solid fa-compass-drafting text-emerald-500 mr-2"></i> AutoCAD Hydrological Systems</li>
+                        <li><i class="fa-solid fa-timeline text-emerald-500 mr-2"></i> Project Planning & Management</li>
+                        <li><i class="fa-solid fa-circle-nodes text-emerald-500 mr-2"></i> Advanced Drip & Sprinkler Design</li>
+                        <li><i class="fa-solid fa-faucet-drip text-emerald-500 mr-2"></i> Water Supply Engineering Systems</li>
                     </ul>
                 </div>
-                <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-mono text-slate-400">
-                    <span>Distinguished Engineering Alumnus</span>
+                <div class="mt-8 pt-4 border-t border-slate-100">
+                    <span class="text-xs text-slate-400 font-mono tracking-wider">Distinguished Engineering Alumnus</span>
                 </div>
             </div>
 
-            <!-- Stakeholder Negotiation Framework -->
-            <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+            <!-- Interpersonal Cross-Cultural Operations Card -->
+            <div class="glass-container p-8 rounded-2xl shadow-sm flex flex-col justify-between">
                 <div>
-                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-6 text-xl shadow-inner">
-                        <i class="fa-solid fa-network-wired"></i>
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-6 text-xl">
+                        <i class="fa-solid fa-earth-africa"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900">Cross-Cultural Diplomacy</h3>
-                    <p class="mt-4 text-slate-600 text-sm leading-relaxed font-medium">
-                        Operated in highly sensitive operational areas coordinating cross-border initiatives with diverse executive teams from the <strong>United Kingdom, Kenya, Ethiopia, Uganda, and South Africa</strong>. Expert understanding of nuanced cultural dynamics.
-                    </p>
-                    <div class="mt-5 bg-slate-50 p-4 rounded-xl border border-slate-200/60">
