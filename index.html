@@ -3,119 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zedagim Tesfaye Tantu | Digital Irrigation Intelligence Architecture</title>
+    <title>Zedagim Tesfaye Tantu | Digital Irrigation Intelligence</title>
+    <!-- Tailwind CSS Engine -->
+    <script src="https://tailwindcss.com"></script>
+    <!-- FontAwesome Vector Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
     <style>
-        /* CRITICAL RESET & BASE LAYOUT */
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         html { scroll-behavior: smooth; }
-        body { bg-color: #fafbfc; color: #1e293b; background: #f8fafc; overflow-x: hidden; }
-
-        /* FIXED STICKY NAVIGATION */
-        nav { position: fixed; top: 0; left: 0; width: 100%; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); z-index: 1000; border-b: 1px solid #e2e8f0; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
-        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
-        .brand { font-size: 1.3rem; font-weight: 800; color: #059669; text-decoration: none; display: flex; align-items: center; gap: 8px; }
-        .nav-links { display: flex; gap: 25px; }
-        .nav-links a { text-decoration: none; color: #475569; font-weight: 600; font-size: 0.95rem; transition: color 0.2s; }
-        .nav-links a:hover { color: #059669; }
-        .cta-btn { background: #059669; color: white !important; padding: 8px 18px; rounded-border: 20px; border-radius: 20px; box-shadow: 0 4px 6px rgba(5, 150, 105, 0.2); }
-        .cta-btn:hover { background: #047857; }
-
-        /* PURE CODE ANIMATED HERO SECTION */
-        .hero { position: relative; min-height: 100vh; background: #020617; display: flex; align-items: center; justify-content: center; padding-top: 80px; overflow: hidden; }
         
-        /* The Moving Satellite System Matrix Over Earth Layer */
-        .satellite-matrix-grid {
-            position: absolute; inset: 0;
-            background-image: radial-gradient(rgba(16, 185, 129, 0.12) 1.5px, transparent 1.5px);
-            background-size: 30px 30px;
-            animation: gridScan 30s linear infinite;
-            z-index: 1;
+        /* Continuous Orbiting Planet/Land Scanning Rotation Vector Engine */
+        .rotating-land-vector {
+            animation: continuousOrbitalRotation 45s linear infinite;
+            transform-style: preserve-3d;
         }
-        @keyframes gridScan {
-            0% { background-position: 0px 0px; }
-            100% { background-position: 30px 30px; }
+        @keyframes continuousOrbitalRotation {
+            0% { transform: rotate(0deg) scale(1); }
+            50% { transform: rotate(180deg) scale(1.05); }
+            100% { transform: rotate(360deg) scale(1); }
         }
 
-        /* Continuous Rotating Green Earth, River, and Full Crop Wheat Animation */
-        .orbital-spinning-earth {
-            position: absolute; width: 600px; height: 600px; border-radius: 50%;
-            background: radial-gradient(circle at 30% 30%, #10b981, #047857 40%, #064e3b 70%, #022c22 100%);
-            box-shadow: 0 0 80px rgba(16, 185, 129, 0.3), inset -30px -30px 60px rgba(0,0,0,0.8);
-            opacity: 0.45; z-index: 2; pointer-events: none;
-            display: flex; align-items: center; justify-content: center;
-            animation: globalRotation 40s linear infinite;
-        }
-        /* Procedural landscape features (Rivers and Wheat fields) simulated via CSS overlay layers */
-        .orbital-spinning-earth::before {
-            content: ''; position: absolute; inset: 0; border-radius: 50%;
-            background: 
-                radial-gradient(ellipse at 20% 40%, #38bdf8 15%, transparent 25%),
-                radial-gradient(ellipse at 60% 70%, #38bdf8 12%, transparent 20%),
-                radial-gradient(circle at 40% 50%, #f59e0b 20%, transparent 40%),
-                radial-gradient(circle at 75% 30%, #f59e0b 15%, transparent 35%);
-            opacity: 0.6; mix-blend-mode: overlay;
-        }
-        @keyframes globalRotation {
-            0% { transform: scale(1.1) rotate(0deg); }
-            100% { transform: scale(1.1) rotate(360deg); }
+        /* Technical Satellite Mesh Background Grid */
+        .telemetry-grid {
+            background-image: 
+                radial-gradient(rgba(16, 185, 129, 0.12) 2px, transparent 2px), 
+                linear-gradient(to bottom, #020617, #0f172a);
+            background-size: 50px 50px, 100% 100%;
         }
 
-        .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, #020617, rgba(2,6,23,0.3), #020617); z-index: 3; }
+        /* Glassmorphism Structural Cards */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glass-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 22px 45px rgba(15, 23, 42, 0.08);
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-        .hero-content { position: relative; max-width: 900px; margin: 0 auto; padding: 0 20px; text-align: center; color: white; z-index: 4; }
-        .badge { background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.4); color: #34d399; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; tracking-spacing: 2px; letter-spacing: 2px; padding: 6px 16px; border-radius: 30px; display: inline-block; margin-bottom: 25px; }
-        .hero-content h1 { font-size: 3.5rem; font-weight: 800; tracking-spacing: -1px; margin-bottom: 15px; }
-        .hero-content h2 { font-size: 1.5rem; color: #cbd5e1; font-weight: 400; margin-bottom: 30px; }
-        .hero-quote { max-width: 750px; margin: 0 auto 40px auto; font-size: 1.15rem; color: #a7f3d0; border-left: 3px solid #10b981; padding-left: 20px; text-align: left; line-height: 1.6; }
-        .hero-actions { display: flex; gap: 15px; justify-content: center; }
-        .primary-action { background: #10b981; color: white; text-decoration: none; padding: 14px 28px; font-weight: 600; border-radius: 8px; box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3); transition: background 0.2s; }
-        .primary-action:hover { background: #059669; }
-        .secondary-action { background: #1e293b; color: white; text-decoration: none; padding: 14px 28px; font-weight: 600; border-radius: 8px; border: 1px solid #334155; transition: background 0.2s; }
-        .secondary-action:hover { background: #334155; }
+    <!-- TOP CONTROL NAVIGATION FRAMEWORK -->
+    <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-lg font-bold text-emerald-600 tracking-tight flex items-center gap-2">
+                <i class="fa-solid fa-satellite-dish animate-pulse"></i> Digital Irrigation Intelligence
+            </a>
+            <div class="hidden lg:flex space-x-7 text-sm font-semibold text-slate-600">
+                <a href="#home" class="hover:text-emerald-600 transition">Home</a>
+                <a href="#credentials" class="hover:text-emerald-600 transition">Credentials</a>
+                <a href="#portals" class="hover:text-emerald-600 transition">Geospatial Portals</a>
+                <a href="#mission" class="hover:text-emerald-600 transition">Our Mission</a>
+                <a href="#contact" class="hover:text-emerald-600 transition">Contact Infrastructure</a>
+            </div>
+            <a href="#contact" class="hidden sm:inline-block bg-emerald-600 text-white text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-lg hover:bg-emerald-700 transition shadow-md shadow-emerald-200">
+                Initiate Consultation
+            </a>
+        </div>
+    </nav>
 
-        /* GRID AND CONTAINER INFRASTRUCTURE */
-        .section { padding: 90px 20px; max-width: 1200px; margin: 0 auto; }
-        .section-header { text-align: center; max-width: 700px; margin: 0 auto 60px auto; }
-        .section-header h2 { font-size: 2.2rem; font-weight: 800; color: #0f172a; margin-bottom: 10px; }
-        .section-header p { color: #64748b; font-size: 1.1rem; }
-        .grid-3 { display: grid; grid-template-cols: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
-
-        /* GLASS CARD ARCHITECTURE */
-        .card { background: white; border: 1px solid #e2e8f0; padding: 35px; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.3s, box-shadow 0.3s; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.05); }
-        .card-icon { width: 50px; height: 50px; background: #f0fdf4; color: #059669; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin-bottom: 25px; }
-        .card h3 { font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 12px; }
-        .card p { color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px; }
-        .accent-text { color: #059669; font-weight: 700; font-size: 1.4rem; margin: 10px 0; display: block; }
-        .file-link { display: inline-flex; align-items: center; gap: 6px; font-size: 0.85rem; font-weight: 700; color: #059669; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; border-top: 1px solid #f1f5f9; padding-top: 15px; margin-top: auto; }
-        .file-link:hover { color: #047857; text-decoration: underline; }
-
-        /* DARK REGIONAL DATA MATRIX SECTION */
-        .dark-section { background: #0f172a; color: white; padding: 90px 20px; }
-        .dark-container { max-width: 1200px; margin: 0 auto; }
-        .dark-header { border-left: 4px solid #10b981; padding-left: 20px; margin-bottom: 50px; }
-        .dark-header h2 { font-size: 2.2rem; font-weight: 800; }
-        .dark-header p { color: #94a3b8; margin-top: 8px; font-size: 1.1rem; }
-
-        /* LIVE TELEMETRY INTERFACES */
-        .portal-row { display: grid; grid-template-cols: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
-        .portal-box { background: #020617; border: 1px solid #1e293b; padding: 30px; border-radius: 12px; transition: border-color 0.2s; }
-        .portal-box:hover { border-color: #10b981; }
-        .meta-tag { font-family: monospace; font-size: 0.8rem; color: #64748b; margin-bottom: 8px; display: block; }
-        .coordinate-tag { font-family: monospace; font-size: 0.85rem; color: #34d399; background: rgba(52, 211, 153, 0.1); padding: 4px 8px; border-radius: 4px; display: inline-block; margin-bottom: 15px; }
+    <!-- HERO PANEL INTERFACE -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden telemetry-grid pt-20">
         
-        /* INTERACTIVE LINGUISTIC MACHINE LEARNING TOOL */
-        .interactive-module { max-width: 700px; margin: 60px auto 0 auto; background: white; color: #0f172a; padding: 40px; border-radius: 20px; border: 1px solid #e2e8f0; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; }
-        .toggle-container { display: flex; justify-content: center; gap: 10px; margin: 25px 0; }
-        .toggle-btn { padding: 10px 20px; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; border: 1px solid #cbd5e1; background: white; color: #475569; border-radius: 8px; cursor: pointer; transition: all 0.2s; }
-        .toggle-btn.active { background: #0f172a; color: white; border-color: #0f172a; }
-        .terminal-display { background: #f8fafc; border: 1px solid #e2e8f0; padding: 25px; border-radius: 12px; text-align: left; min-height: 100px; display: flex; align-items: center; font-size: 1rem; line-height: 1.6; color: #334155; font-weight: 500; }
+        <!-- Rotating Visual Centerpiece -->
+        <div class="absolute inset-0 z-0 pointer-events-none flex items-center justify-center">
+            <div class="rotating-land-vector w-[85vw] h-[85vw] md:w-[50vw] md:h-[50vw] rounded-full border-2 border-dashed border-emerald-500/20 flex items-center justify-center relative">
+                <!-- Inner Scanning Rings and River flow representation vectors -->
+                <div class="absolute inset-12 border border-emerald-400/10 rounded-full animate-ping"></div>
+                <div class="absolute inset-24 border-2 border-dashed border-emerald-400/30 rounded-full"></div>
+                <i class="fa-solid fa-earth-africa text-emerald-500/[0.04] text-[20rem] md:text-[28rem]"></i>
+            </div>
+        </div>
+        
+        <!-- Dynamic Gradient Overlay Shield -->
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/70 to-slate-950 z-1"></div>
 
-        /* FORM FIELD INTEGRATION */
-        .contact-layout { display: grid; grid-template-cols: 1fr 1.2fr; gap: 60px; }
-        @media(max-width: 900px) { .contact-layout { grid-template-cols: 1fr; gap: 40px; } }
-        .contact-info h2 { font-size: 2.2rem; font-weight: 800; color: #0f172a; margin-bottom: 15px; }
-        .contact-info p { color: #475569; line-height: 1.6; margin-bottom: 40px; }
-        .channel-card { display: flex; align-items: center; gap: 20px; padding: 20px; border: 1px solid #e2e8f0; border-radius: 12px; text-decoration: none; color: inherit; margin-bottom: 15px; transition: background 0.2s; }
-        .channel-card:hover { background: #f8fafc; }
-        .channel-icon { width: 45px; height: 45px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold; }
+        <!-- Hero Content Display Matrix -->
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center text-white mt-12">
+            <span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full">
+                Global Engineering Portfolio
+            </span>
+            <h1 class="mt-6 text-4xl md:text-7xl font-black tracking-tight text-white">
+                Zedagim Tesfaye Tantu
+            </h1>
+            <p class="mt-4 text-lg md:text-2xl text-slate-300 font-light max-w-3xl mx-auto tracking-wide">
+                Water Resources & Irrigation Engineer | Satellite Geospatial Data Architect
+            </p>
+            <p class="mt-6 text-emerald-400 font-medium text-base md:text-lg max-w-3xl mx-auto border-l-4 border-emerald-500 pl-4 text-left leading-relaxed">
+                "Eliminating structural and linguistic barriers within geospatial tracking frameworks. Transforming real-time orbital sensor array data directly into actionable land diagnostics for local farmers, sovereign ministries, and global NGOs."
+            </p>
+            <div class="mt-10 flex flex-wrap gap-4 justify-center">
+                <a href="#portals" class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold px-8 py-4 rounded-lg transition shadow-lg shadow-emerald-900/50 tracking-wide">
+                    Explore Analytical Portals
+                </a>
+                <a href="#contact" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 text-sm font-bold px-8 py-4 rounded-lg transition tracking-wide">
+                    Initiate Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CREDENTIALS & HONORS PANEL -->
+    <section id="credentials" class="py-28 px-6 max-w-7xl mx-auto relative z-20">
+        <div class="border-b border-slate-200 pb-8 mb-16">
+            <h2 class="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">Academic Honors & Global Diplomacy</h2>
+            <p class="mt-2 text-slate-600 text-lg font-medium">Merging top-tier hydrological matrix calculation models with strategic root-cause interview frameworks.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Academic Merits -->
+            <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center mb-6 text-xl shadow-inner">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Education & Academic Honors</h3>
+                    <p class="mt-4 text-slate-700 font-bold text-emerald-600 text-base">B.Sc. Water Resources & Irrigation Engineering</p>
+                    <p class="mt-1 text-2xl font-black text-slate-800">CGPA: 3.87 / 4.0</p>
+                    <span class="text-xs font-bold text-slate-400 uppercase tracking-wider block mt-1">(96.75% Institutional Equivalence Rating)</span>
+                    
+                    <h4 class="mt-6 text-xs font-bold text-slate-400 uppercase tracking-wider">Core Curricular Mastery</h4>
+                    <ul class="mt-3 space-y-2.5 text-sm text-slate-600 font-medium">
+                        <li><i class="fa-solid fa-square-poll-vertical text-emerald-500 mr-2"></i> GIS & Remote Atmospheric Sensing</li>
+                        <li><i class="fa-solid fa-droplet text-emerald-500 mr-2"></i> Irrigation Water Management Matrix</li>
+                        <li><i class="fa-solid fa-compass-drafting text-emerald-500 mr-2"></i> AutoCAD Hydrological System Architectures</li>
+                        <li><i class="fa-solid fa-shower text-emerald-500 mr-2"></i> Advanced Drip & Sprinkler Pipeline Design</li>
+                        <li><i class="fa-solid fa-folder-tree text-emerald-500 mr-2"></i> Project Planning & Infrastructure Management</li>
+                        <li><i class="fa-solid fa-faucet text-emerald-500 mr-2"></i> Water Supply Engineering Blueprints</li>
+                    </ul>
+                </div>
+                <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-mono text-slate-400">
+                    <span>Distinguished Engineering Alumnus</span>
+                </div>
+            </div>
+
+            <!-- Stakeholder Negotiation Framework -->
+            <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-6 text-xl shadow-inner">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Cross-Cultural Diplomacy</h3>
+                    <p class="mt-4 text-slate-600 text-sm leading-relaxed font-medium">
+                        Operated in highly sensitive operational areas coordinating cross-border initiatives with diverse executive teams from the <strong>United Kingdom, Kenya, Ethiopia, Uganda, and South Africa</strong>. Expert understanding of nuanced cultural dynamics.
+                    </p>
+                    <div class="mt-5 bg-slate-50 p-4 rounded-xl border border-slate-200/60">
