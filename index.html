@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zedagim Tesfaye Tantu | Digital Irrigation Intelligence Portfolio</title>
+    <title>Zedagim Tesfaye Tantu | Digital Irrigation Portfolio</title>
     <!-- Tailwind CSS Framework -->
     <script src="https://tailwindcss.com"></script>
     <!-- FontAwesome Vector Icons -->
@@ -11,24 +11,24 @@
     <style>
         html { scroll-behavior: smooth; }
         
-        /* High-Tech Animated Space Matrix Background simulating orbital sensors */
+        /* High-Tech Animated Satellite Grid Background */
         .satellite-matrix-bg {
             background-image: 
                 radial-gradient(rgba(16, 185, 129, 0.15) 2px, transparent 2px), 
-                linear-gradient(rgba(15, 23, 42, 0.98), rgba(15, 23, 42, 0.92));
+                linear-gradient(rgba(15, 23, 42, 0.98), rgba(15, 23, 42, 0.90));
             background-size: 35px 35px, 100% 100%;
-            animation: orbitalShift 25s linear infinite;
+            animation: orbitalShift 30s linear infinite;
         }
         @keyframes orbitalShift {
-            0% { background-position: 0px 0px; }
-            100% { background-position: 35px 35px; }
+            0% { background-position: 0px 0px, 0 0; }
+            100% { background-position: 35px 35px, 0 0; }
         }
 
-        /* Continuous 360-Degree Rotating Visual Anchor (Earth & Farmland Simulation) */
-        .rotating-earth-globe {
-            border: 6px dashed rgba(16, 185, 129, 0.6);
-            box-shadow: 0 0 80px rgba(16, 185, 129, 0.4), inset 0 0 50px rgba(16, 185, 129, 0.2);
-            animation: endlessSpin 30s linear infinite;
+        /* Continuous Rotating High-Tech Digital Globe (Never Stops) */
+        .orbiting-globe-ring {
+            border: 4px dashed rgba(16, 185, 129, 0.5);
+            box-shadow: 0 0 70px rgba(16, 185, 129, 0.3), inset 0 0 40px rgba(16, 185, 129, 0.1);
+            animation: endlessSpin 25s linear infinite;
         }
         @keyframes endlessSpin {
             0% { transform: rotate(0deg); }
@@ -38,103 +38,107 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-    <!-- FIXED STICKY NAVIGATION HEADER -->
-    <nav class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md z-50 shadow-md border-b border-slate-200">
+    <!-- NAVIGATION HEADER -->
+    <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-xl font-bold text-emerald-600 flex items-center gap-2">
+            <span class="text-lg font-bold text-emerald-600 flex items-center gap-2">
                 <i class="fa-solid fa-satellite-dish"></i> Digital Irrigation Intelligence
             </span>
-            <div class="hidden md:flex space-x-6 text-sm font-bold text-slate-600">
-                <a href="#home" class="hover:text-emerald-600 transition">Home</a>
-                <a href="#about" class="hover:text-emerald-600 transition">Credentials & Academic</a>
-                <a href="#images-section" class="hover:text-emerald-600 transition">Images & Certs</a>
-                <a href="#documents-section" class="hover:text-emerald-600 transition">Geospatial Documents</a>
-                <a href="#learn-section" class="hover:text-emerald-600 transition">Our Mission</a>
-                <a href="#contact-section" class="bg-emerald-600 text-white px-4 py-1.5 rounded-full hover:bg-emerald-700 transition">Contact Section</a>
+            <div class="hidden md:flex space-x-6 text-sm font-semibold text-slate-600">
+                <a href="#home" class="hover:text-emerald-600">Home</a>
+                <a href="#about" class="hover:text-emerald-600">About</a>
+                <a href="#media-gallery" class="hover:text-emerald-600">Certificates & Photos</a>
+                <a href="#pdf-viewers" class="hover:text-emerald-600">Project Documents</a>
+                <a href="#mission" class="hover:text-emerald-600">Mission</a>
+                <a href="#contact" class="hover:text-emerald-600">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- 1. HOME SECTION (WELCOME HERO WITH ROTATING GLOBE GRID) -->
+    <!-- HERO WELCOME SECTION -->
     <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden satellite-matrix-bg pt-16">
-        <!-- Spinning Neon Earth Grid Simulation Line -->
         <div class="absolute inset-0 z-0 pointer-events-none flex items-center justify-center">
-            <div class="rotating-earth-globe w-[75vw] h-[75vw] md:w-[45vw] md:h-[45vw] rounded-full relative flex items-center justify-center">
-                <i class="fa-solid fa-earth-africa text-emerald-500/10 text-9xl md:text-[15rem]"></i>
+            <div class="orbiting-globe-ring w-[65vw] h-[65vw] md:w-[40vw] md:h-[40vw] rounded-full relative flex items-center justify-center">
+                <i class="fa-solid fa-earth-africa text-emerald-500/10 text-9xl md:text-[13rem]"></i>
             </div>
         </div>
-        
         <div class="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
             <span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
-                Global Technical Portfolio
+                Global Engineering Portfolio
             </span>
             <h1 class="mt-6 text-4xl md:text-6xl font-extrabold tracking-tight">Zedagim Tesfaye Tantu</h1>
-            <p class="mt-4 text-xl text-slate-300 font-light">Water Resources & Irrigation Engineer | Satellite Geospatial Data Architect</p>
-            
-            <p class="mt-6 text-emerald-400 font-medium text-base max-w-3xl mx-auto border-l-2 border-emerald-500 pl-4 text-left md:text-center">
-                "Eliminating structural and language barriers within geospatial frameworks. Transforming real-time orbital sensor array data directly into actionable land diagnostics for local farmers, private companies, sovereign ministries, and global NGOs to navigate climate variations, drought detection, anticipation, and flood risk management."
+            <p class="mt-4 text-xl text-slate-300 font-light">Water Resources & Irrigation Engineer | Satellite Geospatial Architect</p>
+            <p class="mt-6 text-emerald-400 font-medium text-base max-w-2xl mx-auto border-l-2 border-emerald-500 pl-4 text-left md:text-center">
+                "Eliminating scientific language barriers. Translating real-time orbital sensor satellite data directly into actionable land diagnostics for local farmers, sovereign ministries, and global NGOs."
             </p>
-            
             <div class="mt-10 flex flex-wrap gap-4 justify-center">
-                <a href="#documents-section" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg transition shadow-lg shadow-emerald-900/40">Explore Geospatial Portals</a>
-                <a href="#contact-section" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-bold px-6 py-3 rounded-lg transition">View Direct Contact Channels</a>
+                <a href="#pdf-viewers" class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-6 py-3 rounded-lg transition shadow-lg shadow-emerald-900/40">View Farm Projects</a>
+                <a href="#contact" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-medium px-6 py-3 rounded-lg transition">Initiate Consultation</a>
             </div>
         </div>
     </section>
 
-
-    <!-- 2. ABOUT & CREDENTIALS SECTION -->
-    <section id="about" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="border-b border-slate-200 pb-6 mb-12">
-            <h2 class="text-3xl font-bold tracking-tight text-slate-900">Academic Merit & Cross-Cultural Diplomacy</h2>
-            <p class="text-sm text-slate-500 mt-1">Isolating system bottlenecks and calculating advanced hydrological system architectures.</p>
+    <!-- ACADEMIC & CROSS-CULTURAL EXPERTISE -->
+    <section id="about" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="border-b border-slate-200 pb-8 mb-12">
+            <h2 class="text-2xl font-bold tracking-tight text-slate-900">Academic Honors & Global Diplomacy</h2>
+            <p class="text-sm text-slate-500 mt-1">Merging structural water resource calculation models with strategic investigation frameworks.</p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <!-- Academic Merits -->
-            <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                <div>
-                    <div class="text-emerald-600 text-2xl mb-4"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-1">Education & Curricular Mastery</h3>
-                    <p class="text-emerald-600 font-semibold text-sm">Bachelor of Science in Water Resources and Irrigation Engineering</p>
-                    <p class="text-2xl font-bold text-slate-800 mt-2">Graduated with a CGPA of 3.87 / 4.0</p>
-                    <span class="text-xs bg-emerald-50 text-emerald-700 border border-emerald-200 px-2 py-1 rounded inline-block font-mono mt-1">Equivalent to 96.75% Institutional Rating</span>
-                    
-                    <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mt-6 mb-3">Core Engineering Competencies Deployed:</h4>
-                    <ul class="space-y-2 text-sm text-slate-600">
-                        <li><i class="fa-solid fa-square-check text-emerald-500 mr-2"></i> 1. Geographic Information Systems (GIS) and Remote Sensing</li>
-                        <li><i class="fa-solid fa-square-check text-emerald-500 mr-2"></i> 2. Irrigation Water Management</li>
-                        <li><i class="fa-solid fa-square-check text-emerald-500 mr-2"></i> 3. Software Applications in Water Resources and Irrigation Engineering</li>
-                        <li><i class="fa-solid fa-square-check text-emerald-500 mr-2"></i> 4. AutoCAD Applications in Water Resources and Irrigation Engineering</li>
-                        <li><i class="fa-solid fa-square-check text-emerald-500 mr-2"></i> 5. Project Planning and Management</li>
-                        <li><i class="fa-solid fa-square-check text-emerald-500 mr-2"></i> 6. Drip and Sprinkler Irrigation Systems</li>
-                        <li><i class="fa-solid fa-square-check text-emerald-500 mr-2"></i> 7. Water Supply Engineering</li>
-                    </ul>
-                </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-xl border border-slate-100 shadow-sm">
+                <div class="text-emerald-600 text-xl mb-4"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Education & University Merits</h3>
+                <p class="text-emerald-600 font-semibold text-sm">B.Sc. in Water Resources and Irrigation Engineering</p>
+                <p class="text-xl font-bold text-slate-800 mt-1">CGPA: 3.87 / 4.0 <span class="text-xs font-normal text-slate-400">(96.75% Equivalence)</span></p>
+                
+                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mt-6 mb-3">Major Coursework Deployed:</h4>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-slate-600">
+                    <li><i class="fa-solid fa-circle-check text-emerald-500 mr-1"></i> GIS & Remote Sensing</li>
+                    <li><i class="fa-solid fa-circle-check text-emerald-500 mr-1"></i> Irrigation Water Management</li>
+                    <li><i class="fa-solid fa-circle-check text-emerald-500 mr-1"></i> Water Supply Engineering</li>
+                    <li><i class="fa-solid fa-circle-check text-emerald-500 mr-1"></i> Drip & Sprinkler Systems</li>
+                    <li><i class="fa-solid fa-circle-check text-emerald-500 mr-1"></i> AutoCAD Applications</li>
+                    <li><i class="fa-solid fa-circle-check text-emerald-500 mr-1"></i> Software Applications</li>
+                    <li><i class="fa-solid fa-circle-check text-emerald-500 mr-1"></i> Project Planning & Mgmt</li>
+                </ul>
             </div>
 
-            <!-- Diplomacy & Investigation -->
-            <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div class="bg-white p-8 rounded-xl border border-slate-100 shadow-sm flex flex-col justify-between">
                 <div>
-                    <div class="text-blue-600 text-2xl mb-4"><i class="fa-solid fa-users-viewfinder"></i></div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">High-Sensitivity Cross-Border Frameworks</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                        Extensive experience working inside highly sensitive geopolitical geographical zones with diverse international stakeholders from the **UK, Kenya, Ethiopia, Uganda, and South Africa**. Exceptional adaptability to culturally sensitive settings.
+                    <div class="text-blue-600 text-xl mb-4"><i class="fa-solid fa-earth-africa"></i></div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Cross-Cultural Stakeholder Diplomacy</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Worked within highly sensitive geographical vectors collaborating directly with cross-border stakeholders from the **UK, Kenya, Ethiopia, Uganda, and South Africa**, managing diverse and complex cultural frameworks.
                     </p>
-                    <div class="p-5 bg-blue-50/60 rounded-xl border border-blue-100">
-                        <span class="font-bold text-blue-800 text-xs block uppercase tracking-wider mb-2"><i class="fa-solid fa-shield-halved mr-1"></i> British Home Office Training Deployment</span>
-                        <p class="text-xs text-slate-700 leading-relaxed">
-                            Formally trained under the **British Home Office debrief interview technique**. Expertly formulated strategic open, closed, and deep probing interrogative frameworks to isolate root causes. Personal portfolio includes **conducting over 200 field interviews** with potential victims to chart systemic field challenges.
-                        </p>
+                    <div class="mt-4 p-4 bg-blue-50/50 rounded-lg border border-blue-100 text-xs">
+                        <span class="font-bold text-blue-700 block uppercase tracking-wide">British Home Office Certified Debriefing Technique</span>
+                        <p class="text-slate-600 mt-1">Formulated strategic open, closed, and deep probing analytical questions to isolate systemic bottlenecks. Interviewed over 200 individuals to build root-cause challenge portfolios.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- 3. IMAGES FOLDER REALITY & VERIFICATION SECTION -->
-    <section id="images-section" class="py-24 px-6 bg-slate-100 border-t border-slate-200">
+    <!-- LIVE IMAGE & CERTIFICATE GALLERY SECTION -->
+    <section id="media-gallery" class="py-20 px-6 bg-slate-100 border-t border-slate-200">
         <div class="max-w-7xl mx-auto">
-            <div class="mb-12">
-                <h2 class="text-3xl font-bold text-slate-900"><i class="fa-solid fa-images text-emerald-600 mr-2"></i>Your Verified Local Images Folder (`images/`)</h2>
+            <div class="mb-10 text-center md:text-left">
+                <h2 class="text-2xl font-bold text-slate-900"><i class="fa-solid fa-images text-emerald-600 mr-2"></i>Verified Credentials Gallery</h2>
+                <p class="text-sm text-slate-500 mt-1">These image windows dynamically pull files straight from your `images` folder.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Profile Photo -->
+                <div class="bg-white p-4 rounded-xl shadow-md border border-slate-200">
+                    <span class="text-xs font-mono font-bold text-slate-400 block mb-2">TARGET: images/my-photo</span>
+                    <div class="w-full h-64 bg-slate-200 rounded-lg overflow-hidden border border-slate-300 flex items-center justify-center">
+                        <img src="images/my-photo.jpg" alt="Zedagim Tesfaye Tantu" class="w-full h-full object-cover" data-filename="my-photo">
+                    </div>
+                    <h4 class="font-bold text-sm text-slate-800 mt-3">Professional Portrait Photo</h4>
+                </div>
+
+                <!-- Team Photo -->
+                <div class="bg-white p-4 rounded-xl shadow-md border border-slate-200">
+                    <span class="text-xs font-mono font-bold text-slate-400 block mb-2">TARGET: images/team-photo</span>
+                    <div class="w-full h-64 bg-slate-200 rounded-lg overflow-hidden border border-slate-300 flex items-center justify-center">
