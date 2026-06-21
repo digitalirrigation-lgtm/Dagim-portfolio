@@ -11,7 +11,7 @@
     <style>
         html { scroll-behavior: smooth; }
         
-        /* Pure Code Space-Grid Background Animation */
+        /* High-Tech Animated Satellite Grid Background */
         .satellite-matrix-bg {
             background-image: 
                 radial-gradient(rgba(16, 185, 129, 0.15) 2px, transparent 2px), 
@@ -47,8 +47,8 @@
             <div class="hidden md:flex space-x-6 text-sm font-semibold text-slate-600">
                 <a href="#home" class="hover:text-emerald-600">Home</a>
                 <a href="#about" class="hover:text-emerald-600">About</a>
-                <a href="#certificates" class="hover:text-emerald-600">Certificates</a>
-                <a href="#documents" class="hover:text-emerald-600">Documents</a>
+                <a href="#media-gallery" class="hover:text-emerald-600">Certificates & Photos</a>
+                <a href="#pdf-viewers" class="hover:text-emerald-600">Project Documents</a>
                 <a href="#mission" class="hover:text-emerald-600">Mission</a>
                 <a href="#contact" class="hover:text-emerald-600">Contact</a>
             </div>
@@ -72,7 +72,7 @@
                 "Eliminating scientific language barriers. Translating real-time orbital sensor satellite data directly into actionable land diagnostics for local farmers, sovereign ministries, and global NGOs."
             </p>
             <div class="mt-10 flex flex-wrap gap-4 justify-center">
-                <a href="#documents" class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-6 py-3 rounded-lg transition shadow-lg shadow-emerald-900/40">View Farm Projects</a>
+                <a href="#pdf-viewers" class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-6 py-3 rounded-lg transition shadow-lg shadow-emerald-900/40">View Farm Projects</a>
                 <a href="#contact" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-medium px-6 py-3 rounded-lg transition">Initiate Consultation</a>
             </div>
         </div>
@@ -120,26 +120,24 @@
         </div>
     </section>
 
-    <!-- IMAGES FOLDER VERIFICATION SECTION -->
-    <section id="certificates" class="py-20 px-6 bg-slate-100">
+    <!-- LIVE IMAGE & CERTIFICATE GALLERY SECTION -->
+    <section id="media-gallery" class="py-20 px-6 bg-slate-100 border-t border-slate-200">
         <div class="max-w-7xl mx-auto">
-            <div class="mb-10">
-                <h2 class="text-2xl font-bold text-slate-900">1. Verified Images Folder (`images/`)</h2>
-                <p class="text-sm text-slate-500 mt-1">These links point directly to the physical image files on your computer or GitHub server.</p>
+            <div class="mb-10 text-center md:text-left">
+                <h2 class="text-2xl font-bold text-slate-900"><i class="fa-solid fa-images text-emerald-600 mr-2"></i>Verified Credentials Gallery</h2>
+                <p class="text-sm text-slate-500 mt-1">These image windows pull files directly from your folder onto the screen.</p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Image 1 -->
-                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
-                    <div class="text-slate-400 text-2xl mb-3"><i class="fa-solid fa-image"></i></div>
-                    <h4 class="font-bold text-sm text-slate-800">My Professional Portrait Photo</h4>
-                    <p class="text-xs text-slate-500 mt-1">Primary identity verification document.</p>
-                    <a href="images/my-photo.jpg" target="_blank" class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-emerald-600 hover:underline">
-                        Open images/my-photo.jpg <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                    </a>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Profile Photo -->
+                <div class="bg-white p-4 rounded-xl shadow-md border border-slate-200">
+                    <span class="text-xs font-mono font-bold text-slate-400 block mb-2">SOURCE: images/my-photo.jpg</span>
+                    <div class="w-full h-64 bg-slate-200 rounded-lg overflow-hidden border border-slate-300">
+                        <img src="images/my-photo.jpg" alt="Zedagim Tesfaye Tantu" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='<div class=\'p-8 text-center text-xs text-red-500\'><i class=\'fa-solid fa-triangle-exclamation text-xl block mb-2\'></i>Missing File:< class=\'font-mono block mt-1\'>images/my-photo.jpg</div>'">
+                    </div>
+                    <h4 class="font-bold text-sm text-slate-800 mt-3">Professional Portrait Photo</h4>
                 </div>
-                <!-- Image 2 -->
-                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
-                    <div class="text-slate-400 text-2xl mb-3"><i class="fa-solid fa-image"></i></div>
-                    <h4 class="font-bold text-sm text-slate-800">International Stakeholder Team Photo</h4>
-                    <p class="text-xs text-slate-500 mt-1">Cross-cultural collaboration deployment review.</p>
+
+                <!-- Team Photo -->
+                <div class="bg-white p-4 rounded-xl shadow-md border border-slate-200">
+                    <span class="text-xs font-mono font-bold text-slate-400 block mb-2">SOURCE: images/team-photo.jpg</span>
