@@ -1,36 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zedagim Tesfaye Tantu | Digital Irrigation Technical Portfolio</title>
-    <!-- Tailwind CSS Engine -->
-    <script src="https://tailwindcss.com"></script>
-    <!-- FontAwesome Icon Grid -->
-    <link rel="stylesheet" href="https://cloudflare.com">
+
+    <!-- ✅ FIX: Tailwind CDN (correct script URL) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ✅ FIX: FontAwesome CDN (correct full URL) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
     <style>
-        html { scroll-behavior: smooth; }
-        
-        /* Pure Code Space-Grid Orbiting Matrix Background */
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Satellite grid background */
         .satellite-matrix-bg {
             background-color: #0f172a;
             background-image: radial-gradient(#10b981 1.5px, transparent 1.5px);
             background-size: 30px 30px;
         }
 
-        /* 360-Degree Continuous Rotating Global Attraction Anchor (Never Stops) */
+        /* 360° continuous globe rotation */
         .globe-rotate {
             animation: infiniteSpin 25s linear infinite;
         }
         @keyframes infiniteSpin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Hover lift effect for cards */
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
         }
     </style>
 </head>
+
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-    <!-- FIXED TOP INTERACTIVE HEADER -->
+    <!-- ============================================================ -->
+    <!--  FIXED NAVIGATION                                             -->
+    <!-- ============================================================ -->
     <nav class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md z-50 shadow-sm border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <span class="text-base font-bold text-emerald-600 flex items-center gap-2">
@@ -38,7 +60,7 @@
             </span>
             <div class="hidden md:flex space-x-6 text-xs font-bold uppercase tracking-wider text-slate-600">
                 <a href="#home" class="hover:text-emerald-600">Home</a>
-                <a href="#about" class="hover:text-emerald-600">Academic & Diplomacy</a>
+                <a href="#about" class="hover:text-emerald-600">Academic &amp; Diplomacy</a>
                 <a href="#media-vault" class="hover:text-emerald-600">Credentials Vault</a>
                 <a href="#mission" class="hover:text-emerald-600">Core Mission</a>
                 <a href="#contact" class="hover:text-emerald-600">Contact Matrix</a>
@@ -46,46 +68,56 @@
         </div>
     </nav>
 
-    <!-- HERO SECTION (ROTATING VISUAL LAND ATTRACTION ANCHOR) -->
+    <!-- ============================================================ -->
+    <!--  HERO SECTION                                                 -->
+    <!-- ============================================================ -->
     <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden satellite-matrix-bg pt-16">
+        <!-- Rotating globe backdrop -->
         <div class="absolute inset-0 z-0 opacity-20 flex items-center justify-center pointer-events-none">
             <div class="globe-rotate w-[55vw] h-[55vw] rounded-full border-2 border-dashed border-emerald-400 flex items-center justify-center">
                 <i class="fa-solid fa-earth-africa text-emerald-400 text-[12rem]"></i>
             </div>
         </div>
-        
+
+        <!-- Hero content -->
         <div class="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
             <span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-extrabold uppercase tracking-widest px-4 py-1.5 rounded-full">
                 Global Technical Portfolio
             </span>
             <h1 class="mt-6 text-4xl md:text-6xl font-extrabold tracking-tight">Zedagim Tesfaye Tantu</h1>
-            <p class="mt-4 text-lg md:text-xl text-slate-300 font-light">Water Resources & Irrigation Engineer | Satellite Geospatial Data Architect</p>
+            <p class="mt-4 text-lg md:text-xl text-slate-300 font-light">Water Resources &amp; Irrigation Engineer | Satellite Geospatial Data Architect</p>
             <p class="mt-6 text-emerald-400 font-medium text-sm md:text-base max-w-2xl mx-auto border-l-2 border-emerald-500 pl-4 text-left md:text-center">
-                "Eliminating structural and language barriers within geospatial frameworks. Transforming real-time orbital sensor array data directly into actionable land diagnostics for local farmers, private companies, sovereign ministries, and global NGOs to plan for future climate variations, drought detection, anticipation, and flood risk management."
+                &ldquo;Eliminating structural and language barriers within geospatial frameworks. Transforming real-time orbital sensor array data directly into actionable land diagnostics for local farmers, private companies, sovereign ministries, and global NGOs to plan for future climate variations, drought detection, anticipation, and flood risk management.&rdquo;
             </p>
             <div class="mt-10 flex flex-wrap gap-4 justify-center">
-                <a href="#media-vault" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider px-6 py-3.5 rounded-lg transition shadow-lg shadow-emerald-900/40">Explore Portfolio Vault</a>
-                <a href="#contact" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 text-xs font-bold uppercase tracking-wider px-6 py-3.5 rounded-lg transition">Initiate Direct Consultation</a>
+                <a href="#media-vault" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider px-6 py-3.5 rounded-lg transition shadow-lg shadow-emerald-900/40">
+                    <i class="fa-solid fa-folder-open mr-2"></i>Explore Portfolio Vault
+                </a>
+                <a href="#contact" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 text-xs font-bold uppercase tracking-wider px-6 py-3.5 rounded-lg transition">
+                    <i class="fa-solid fa-paper-plane mr-2"></i>Initiate Direct Consultation
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- ACADEMIC MASTERY & DIPLOMACY MATRIX -->
+    <!-- ============================================================ -->
+    <!--  ACADEMIC MASTERY & DIPLOMACY MATRIX                          -->
+    <!-- ============================================================ -->
     <section id="about" class="py-20 px-6 max-w-7xl mx-auto">
         <div class="border-b border-slate-200 pb-6 mb-12">
-            <h2 class="text-2xl font-bold text-slate-900">Academic Merit & Cross-Cultural Diplomacy</h2>
+            <h2 class="text-2xl font-bold text-slate-900">Academic Merit &amp; Cross-Cultural Diplomacy</h2>
             <p class="text-xs text-slate-500 mt-1">Isolating system bottlenecks and calculating advanced hydrological system architectures.</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <!-- Academic Merit Card -->
-            <div class="bg-white p-6 md:p-8 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div class="bg-white p-6 md:p-8 rounded-xl border border-slate-200 shadow-sm card-hover flex flex-col justify-between">
                 <div>
                     <div class="text-emerald-600 text-xl mb-4"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-1">Education & Curricular Mastery</h3>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">Education &amp; Curricular Mastery</h3>
                     <p class="text-emerald-600 font-semibold text-xs uppercase tracking-wide">Bachelor of Science in Water Resources and Irrigation Engineering</p>
                     <p class="text-2xl font-black text-slate-800 mt-2">CGPA: 3.87 / 4.0 <span class="text-xs font-normal text-slate-400 block sm:inline sm:ml-1">(96.75% Institutional Equivalence Rating)</span></p>
-                    
+
                     <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mt-6 mb-3">Core Engineering Competencies Deployed:</h4>
                     <ol class="space-y-2 text-xs md:text-sm text-slate-600 font-medium">
                         <li>1. Geographic Information Systems (GIS) and Remote Sensing</li>
@@ -100,38 +132,233 @@
             </div>
 
             <!-- Interpersonal Diplomacy Card -->
-            <div class="bg-white p-6 md:p-8 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div class="bg-white p-6 md:p-8 rounded-xl border border-slate-200 shadow-sm card-hover flex flex-col justify-between">
                 <div>
                     <div class="text-blue-600 text-xl mb-4"><i class="fa-solid fa-earth-africa"></i></div>
                     <h3 class="text-lg font-bold text-slate-900 mb-2">High-Sensitivity Cross-Border Frameworks</h3>
                     <p class="text-xs md:text-sm text-slate-600 leading-relaxed mb-4">
-                        Extensive experience working inside highly sensitive geopolitical geographical zones with diverse international stakeholders from the **UK, Kenya, Ethiopia, Uganda, and South Africa**. Exceptional adaptability to culturally sensitive settings.
+                        Extensive experience working inside highly sensitive geopolitical geographical zones with diverse international stakeholders from the <strong>UK, Kenya, Ethiopia, Uganda, and South Africa</strong>. Exceptional adaptability to culturally sensitive settings.
                     </p>
                     <div class="p-4 bg-blue-50 rounded-lg border border-blue-100 text-xs">
                         <span class="font-bold text-blue-700 block uppercase tracking-wide"><i class="fa-solid fa-certificate mr-1"></i>British Home Office Training Deployment</span>
-                        <p class="text-slate-600 mt-1 leading-relaxed">Formally trained under the **British Home Office debrief interview technique**. Expertly formulated strategic open, closed, and deep probing interrogative frameworks to isolate root causes. Personal portfolio includes **conducting over 200 field interviews** with potential victims to chart systemic challenges.</p>
+                        <p class="text-slate-600 mt-1 leading-relaxed">Formally trained under the <strong>British Home Office debrief interview technique</strong>. Expertly formulated strategic open, closed, and deep probing interrogative frameworks to isolate root causes. Personal portfolio includes <strong>conducting over 200 field interviews</strong> with potential victims to chart systemic challenges.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- UNIFIED MEDIA & DOCUMENT VAULT SECTION (ZERO CLICKS TARGET VIEW) -->
+    <!-- ============================================================ -->
+    <!--  UNIFIED MEDIA & DOCUMENT VAULT                               -->
+    <!-- ============================================================ -->
     <section id="media-vault" class="py-20 px-6 bg-slate-100 border-t border-slate-200">
         <div class="max-w-7xl mx-auto">
             <div class="mb-10">
                 <h2 class="text-2xl font-bold text-slate-900"><i class="fa-solid fa-folder-open text-emerald-600 mr-2"></i>Unified Verification Vault</h2>
-                <p class="text-xs text-slate-500 mt-1">If files display as white or missing squares below, check that your local folder and file extensions are completely lowercase (e.g., .jpg, .pdf).</p>
+                <p class="text-xs text-slate-500 mt-1">
+                    <i class="fa-regular fa-circle-exclamation text-amber-500 mr-1"></i>
+                    If files display as missing squares below, make sure your local folder names and file extensions are <strong>all lowercase</strong> (e.g. <code>.jpg</code>, <code>.pdf</code>).
+                </p>
             </div>
 
-            <!-- 1. IMAGES SECTION BLOCK -->
+            <!-- ---- IMAGES SECTION ---- -->
             <div class="mb-12">
-                <h3 class="text-xs font-extrabold uppercase tracking-widest text-slate-400 mb-4 flex items-center gap-1.5"><i class="fa-solid fa-image text-slate-400"></i> Local Images File Subdirectory (`./images/`)</h3>
+                <h3 class="text-xs font-extrabold uppercase tracking-widest text-slate-400 mb-4 flex items-center gap-1.5">
+                    <i class="fa-solid fa-image text-slate-400"></i> Local Images Subdirectory (<code class="bg-slate-200 px-1.5 py-0.5 rounded text-[10px]">./images/</code>)
+                </h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Image 1 -->
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                        <div>
-                            <span class="text-[10px] font-mono text-slate-400 block mb-1">./images/my-photo.jpg</span>
-                            <h4 class="font-bold text-sm text-slate-800">My Professional Portrait Photo</h4>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm card-hover flex flex-col">
+                        <span class="text-[10px] font-mono text-slate-400 block mb-1">./images/my-photo.jpg</span>
+                        <h4 class="font-bold text-sm text-slate-800">Professional Portrait</h4>
+                        <div class="mt-3 aspect-video bg-slate-50 border border-slate-200 rounded overflow-hidden flex items-center justify-center text-slate-300 text-xs">
+                            <i class="fa-regular fa-image text-4xl text-slate-300"></i>
+                            <span class="sr-only">Portrait placeholder</span>
                         </div>
-                        <div class="mt-3 aspect-video bg-slate-50 border border-slate-200 rounded overflow-hidden">
+                        <p class="text-[10px] text-slate-400 mt-2 italic">Replace with your actual photo.</p>
+                    </div>
+                    <!-- Image 2 -->
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm card-hover flex flex-col">
+                        <span class="text-[10px] font-mono text-slate-400 block mb-1">./images/certificate-award.jpg</span>
+                        <h4 class="font-bold text-sm text-slate-800">Certificate / Award</h4>
+                        <div class="mt-3 aspect-video bg-slate-50 border border-slate-200 rounded overflow-hidden flex items-center justify-center text-slate-300 text-xs">
+                            <i class="fa-regular fa-image text-4xl text-slate-300"></i>
+                            <span class="sr-only">Certificate placeholder</span>
+                        </div>
+                        <p class="text-[10px] text-slate-400 mt-2 italic">Add your certificate image.</p>
+                    </div>
+                    <!-- Image 3 -->
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm card-hover flex flex-col">
+                        <span class="text-[10px] font-mono text-slate-400 block mb-1">./images/field-work.jpg</span>
+                        <h4 class="font-bold text-sm text-slate-800">Field Work / Site Photo</h4>
+                        <div class="mt-3 aspect-video bg-slate-50 border border-slate-200 rounded overflow-hidden flex items-center justify-center text-slate-300 text-xs">
+                            <i class="fa-regular fa-image text-4xl text-slate-300"></i>
+                            <span class="sr-only">Field work placeholder</span>
+                        </div>
+                        <p class="text-[10px] text-slate-400 mt-2 italic">Show your on‑site experience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ---- DOCUMENTS SECTION (PDFs) ---- -->
+            <div>
+                <h3 class="text-xs font-extrabold uppercase tracking-widest text-slate-400 mb-4 flex items-center gap-1.5">
+                    <i class="fa-regular fa-file-pdf text-slate-400"></i> Local Documents Subdirectory (<code class="bg-slate-200 px-1.5 py-0.5 rounded text-[10px]">./docs/</code>)
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- PDF 1 -->
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm card-hover flex flex-col">
+                        <span class="text-[10px] font-mono text-slate-400 block mb-1">./docs/resume.pdf</span>
+                        <h4 class="font-bold text-sm text-slate-800 flex items-center gap-2">
+                            <i class="fa-regular fa-file-pdf text-red-500"></i> Professional CV / Résumé
+                        </h4>
+                        <p class="text-xs text-slate-500 mt-1">Comprehensive work history and technical skills.</p>
+                        <div class="mt-3 flex items-center gap-2 text-xs text-slate-400">
+                            <i class="fa-regular fa-file-lines"></i>
+                            <span>PDF document</span>
+                        </div>
+                    </div>
+                    <!-- PDF 2 -->
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm card-hover flex flex-col">
+                        <span class="text-[10px] font-mono text-slate-400 block mb-1">./docs/academic-transcript.pdf</span>
+                        <h4 class="font-bold text-sm text-slate-800 flex items-center gap-2">
+                            <i class="fa-regular fa-file-pdf text-red-500"></i> Academic Transcript
+                        </h4>
+                        <p class="text-xs text-slate-500 mt-1">Official record of coursework and grades.</p>
+                        <div class="mt-3 flex items-center gap-2 text-xs text-slate-400">
+                            <i class="fa-regular fa-file-lines"></i>
+                            <span>PDF document</span>
+                        </div>
+                    </div>
+                    <!-- PDF 3 -->
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm card-hover flex flex-col">
+                        <span class="text-[10px] font-mono text-slate-400 block mb-1">./docs/certificate-bho.pdf</span>
+                        <h4 class="font-bold text-sm text-slate-800 flex items-center gap-2">
+                            <i class="fa-regular fa-file-pdf text-red-500"></i> British Home Office Certificate
+                        </h4>
+                        <p class="text-xs text-slate-500 mt-1">Debrief interview technique training credential.</p>
+                        <div class="mt-3 flex items-center gap-2 text-xs text-slate-400">
+                            <i class="fa-regular fa-file-lines"></i>
+                            <span>PDF document</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 p-4 bg-amber-50 border border-amber-200 rounded-lg text-xs text-amber-700 flex items-start gap-3">
+                    <i class="fa-regular fa-circle-info text-amber-500 text-lg mt-0.5"></i>
+                    <div>
+                        <strong>Tip for GitHub Pages:</strong> Place your actual images inside a folder named
+                        <code class="bg-amber-100 px-1.5 py-0.5 rounded">images/</code> and your PDFs inside
+                        <code class="bg-amber-100 px-1.5 py-0.5 rounded">docs/</code> in the root of your repository.
+                        Use <strong>all lowercase</strong> filenames (e.g. <code>my-photo.jpg</code>, not <code>My-Photo.JPG</code>).
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!--  CORE MISSION                                                 -->
+    <!-- ============================================================ -->
+    <section id="mission" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="border-b border-slate-200 pb-6 mb-12">
+            <h2 class="text-2xl font-bold text-slate-900"><i class="fa-solid fa-bullseye text-emerald-600 mr-2"></i>Core Mission &amp; Technical Philosophy</h2>
+            <p class="text-xs text-slate-500 mt-1">Bridging orbital data to on‑ground action with zero latency.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Mission 1 -->
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm card-hover text-center">
+                <div class="w-12 h-12 mx-auto bg-emerald-50 rounded-full flex items-center justify-center text-emerald-600 text-xl mb-4">
+                    <i class="fa-solid fa-satellite"></i>
+                </div>
+                <h3 class="font-bold text-slate-900">Satellite Data Integration</h3>
+                <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                    Harnessing real‑time orbital sensor arrays (Sentinel, Landsat, MODIS) to produce high‑resolution land diagnostics for precision irrigation and drought anticipation.
+                </p>
+            </div>
+            <!-- Mission 2 -->
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm card-hover text-center">
+                <div class="w-12 h-12 mx-auto bg-blue-50 rounded-full flex items-center justify-center text-blue-600 text-xl mb-4">
+                    <i class="fa-solid fa-people-group"></i>
+                </div>
+                <h3 class="font-bold text-slate-900">Stakeholder Empowerment</h3>
+                <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                    Translating complex geospatial outputs into clear, actionable recommendations for farmers, ministries, NGOs, and private enterprises — in their local language and context.
+                </p>
+            </div>
+            <!-- Mission 3 -->
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm card-hover text-center">
+                <div class="w-12 h-12 mx-auto bg-amber-50 rounded-full flex items-center justify-center text-amber-600 text-xl mb-4">
+                    <i class="fa-solid fa-cloud-rain"></i>
+                </div>
+                <h3 class="font-bold text-slate-900">Climate Resilience</h3>
+                <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                    Developing early‑warning systems for flood risk and drought, enabling communities and governments to plan, adapt, and safeguard livelihoods against climate volatility.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!--  CONTACT MATRIX                                               -->
+    <!-- ============================================================ -->
+    <section id="contact" class="py-20 px-6 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl font-bold text-slate-900"><i class="fa-regular fa-paper-plane text-emerald-600 mr-2"></i>Contact Matrix</h2>
+            <p class="text-xs text-slate-500 mt-1">Initiate a direct consultation or request my full portfolio package.</p>
+
+            <div class="mt-10 bg-white p-6 md:p-10 rounded-2xl border border-slate-200 shadow-sm text-left">
+                <form action="#" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Full Name</label>
+                            <input type="text" placeholder="Your full name" class="w-full border border-slate-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent" />
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Email Address</label>
+                            <input type="email" placeholder="you@example.com" class="w-full border border-slate-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent" />
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Subject</label>
+                        <input type="text" placeholder="e.g. Portfolio request, collaboration, speaking engagement" class="w-full border border-slate-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent" />
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Message</label>
+                        <textarea rows="4" placeholder="Tell me about your project or inquiry…" class="w-full border border-slate-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider px-6 py-4 rounded-lg transition shadow-lg shadow-emerald-900/30 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i> Send Direct Message
+                    </button>
+                </form>
+
+                <div class="mt-8 pt-6 border-t border-slate-200 flex flex-wrap justify-center gap-6 text-xs text-slate-500">
+                    <a href="#" class="hover:text-emerald-600 transition flex items-center gap-1.5">
+                        <i class="fa-brands fa-linkedin-in text-slate-400"></i> LinkedIn
+                    </a>
+                    <a href="#" class="hover:text-emerald-600 transition flex items-center gap-1.5">
+                        <i class="fa-brands fa-x-twitter text-slate-400"></i> X
+                    </a>
+                    <a href="#" class="hover:text-emerald-600 transition flex items-center gap-1.5">
+                        <i class="fa-brands fa-github text-slate-400"></i> GitHub
+                    </a>
+                    <a href="#" class="hover:text-emerald-600 transition flex items-center gap-1.5">
+                        <i class="fa-regular fa-envelope text-slate-400"></i> zedagim@example.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!--  FOOTER                                                       -->
+    <!-- ============================================================ -->
+    <footer class="bg-slate-900 text-slate-400 py-6 px-6 text-center text-xs border-t border-slate-800">
+        <p>&copy; 2026 Zedagim Tesfaye Tantu &mdash; Built with <i class="fa-solid fa-heart text-emerald-500 mx-1"></i> for global impact.</p>
+        <p class="mt-1 text-slate-500">
+            <i class="fa-regular fa-satellite-dish mr-1"></i> Digital Irrigation Intelligence &bull; Water Resources &amp; Remote Sensing
+        </p>
+    </footer>
+
+</body>
+</html>
