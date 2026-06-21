@@ -3,138 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zedagim Tesfaye Tantu | Digital Irrigation Intelligence Architecture</title>
-    <!-- Tailwind CSS Engine -->
+    <title>Zedagim Tesfaye Tantu | Digital Irrigation Intelligence Portfolio</title>
+    <!-- Tailwind CSS for high-fidelity international presentation formatting -->
     <script src="https://tailwindcss.com"></script>
-    <!-- FontAwesome Core Icon Assets -->
+    <!-- FontAwesome for global standard engineering vector iconography -->
     <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         html { scroll-behavior: smooth; }
         
-        /* Deep Celestial Orbital Mesh Grid Styling */
-        .satellite-matrix-mesh {
-            background-color: #0b1329;
-            background-image: 
-                radial-gradient(rgba(16, 185, 129, 0.2) 1.5px, transparent 1.5px), 
-                linear-gradient(to bottom, #0f172a, #020617);
-            background-size: 30px 30px, 100% 100%;
-            animation: orbitalDrift 45s linear infinite;
-        }
-        @keyframes orbitalDrift {
-            0% { background-position: 0px 0px, 0 0; }
-            100% { background-position: 30px 30px, 0 0; }
-        }
-
-        /* Continuous 360° Earth Sensor Sweep Animation - Visual Attraction Anchor */
-        .sensor-globe-rotation {
-            animation: matrixSpin 25s linear infinite;
+        /* THE VISUAL ATTRACTION BACKDROP EFFECT */
+        /* Generates a continuous, infinite 360-degree rotating planet terrain effect */
+        .rotating-farmland-overlay {
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(16, 185, 129, 0.4)), 
+                        url('https://unsplash.com');
+            background-size: cover;
+            background-position: center;
+            animation: continuousEarthSpin 45s linear infinite;
             transform-style: preserve-3d;
         }
-        @keyframes matrixSpin {
-            0% { transform: rotate(0deg) scale(1); }
-            50% { transform: rotate(180deg) scale(1.03); }
-            100% { transform: rotate(360deg) scale(1); }
+        @keyframes continuousEarthSpin {
+            0% { transform: scale(1.1) rotate(0deg); }
+            100% { transform: scale(1.1) rotate(360deg); }
         }
 
-        /* Glassmorphism Optimization Component Layer */
-        .premium-data-card {
-            background: rgba(255, 255, 255, 0.03);
+        /* Glassmorphism panel sheets to maximize text legibility over the moving imagery */
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.75);
             backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .premium-data-card:hover {
-            background: rgba(255, 255, 255, 0.06);
-            border-color: rgba(16, 185, 129, 0.4);
-            transform: translateY(-4px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(16, 185, 129, 0.2);
         }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased">
+<body class="bg-slate-900 text-slate-100 font-sans antialiased">
 
-    <!-- GLOBAL NAVIGATION ARCHITECTURE -->
-    <nav class="fixed top-0 left-0 w-full bg-slate-950/80 backdrop-blur-lg z-50 border-b border-slate-800/60 shadow-2xl">
+    <!-- TOP FIXED NAVIGATION MATRIX -->
+    <nav class="fixed top-0 left-0 w-full bg-slate-950/90 backdrop-blur-md z-50 border-b border-emerald-500/20 shadow-lg">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-md font-bold text-emerald-400 tracking-wider flex items-center gap-2.5">
-                <i class="fa-solid fa-satellite-dish animate-pulse"></i> DIGITAL IRRIGATION INTELLIGENCE
+            <span class="text-base font-bold text-emerald-400 tracking-tight flex items-center gap-2">
+                <i class="fa-solid fa-satellite-dish animate-pulse"></i> Digital Irrigation Intelligence
             </span>
-            <div class="hidden lg:flex space-x-8 text-xs font-semibold tracking-widest text-slate-400 uppercase">
-                <a href="#home" class="hover:text-emerald-400 transition">Core</a>
-                <a href="#about" class="hover:text-emerald-400 transition">Diplomacy</a>
-                <a href="#images-vault" class="hover:text-emerald-400 transition">Credentials</a>
-                <a href="#documents-vault" class="hover:text-emerald-400 transition">Geospatial Papers</a>
+            <div class="hidden md:flex space-x-6 text-xs font-semibold uppercase tracking-wider text-slate-300">
+                <a href="#home" class="hover:text-emerald-400 transition">Home</a>
+                <a href="#about" class="hover:text-emerald-400 transition">Credentials</a>
+                <a href="#photos" class="hover:text-emerald-400 transition">Media Assets</a>
+                <a href="#pdfs" class="hover:text-emerald-400 transition">Geospatial Portfolios</a>
                 <a href="#mission" class="hover:text-emerald-400 transition">Mission</a>
-                <a href="#contact-terminal" class="bg-emerald-500/10 text-emerald-400 px-4 py-2 rounded border border-emerald-500/30 hover:bg-emerald-500 hover:text-white transition shadow-lg shadow-emerald-500/10">Inquiry Link</a>
+                <a href="#contact" class="hover:text-emerald-400 transition">Contact Section</a>
             </div>
         </div>
     </nav>
 
-    <!-- HERO SCANNING MATRIX COMPONENT -->
-    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden satellite-matrix-mesh pt-20">
-        <!-- Persistent Interactive Spatial Rotating Vector -->
-        <div class="absolute inset-0 z-0 pointer-events-none flex items-center justify-center">
-            <div class="sensor-globe-rotation w-[75vw] h-[75vw] md:w-[45vw] md:h-[45vw] rounded-full border-2 border-dashed border-emerald-500/20 flex items-center justify-center relative">
-                <div class="absolute inset-6 border border-dotted border-emerald-400/10 rounded-full"></div>
-                <div class="absolute w-full h-[1px] bg-gradient-to-r from-transparent via-emerald-400 to-transparent top-1/2 animate-bounce opacity-20"></div>
-                <i class="fa-solid fa-earth-africa text-emerald-500/5 text-[12rem] md:text-[18rem]"></i>
-            </div>
-        </div>
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950 z-1"></div>
+    <!-- HERO SECTION (ROTATING LUXURY FARMLAND HERO CONTAINER) -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+        <!-- The Moving Earth View: Rotating crop fields, wheat clusters, and flowing river imagery layout -->
+        <div class="absolute inset-0 z-0 pointer-events-none rotating-farmland-overlay opacity-60"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-slate-950 z-1"></div>
 
-        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
-            <span class="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full inline-block mb-6">
-                Orbital Remote Sensing & Hydrological Framework Portfolio
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center text-white mt-8">
+            <span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-inner">
+                Global Technical Portfolio
             </span>
-            <h1 class="text-4xl md:text-7xl font-black text-white tracking-tight uppercase leading-none">
+            <h1 class="mt-6 text-4xl md:text-6xl font-extrabold tracking-tight leading-none text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-emerald-400">
                 Zedagim Tesfaye Tantu
             </h1>
-            <p class="mt-4 text-sm md:text-xl text-emerald-400 font-mono tracking-wide max-w-3xl mx-auto">
-                Water Resources & Irrigation Engineer // Satellite Geospatial Data Architect
+            <p class="mt-4 text-lg md:text-xl text-slate-300 font-light tracking-wide max-w-3xl mx-auto">
+                Water Resources & Irrigation Engineer | Satellite Geospatial Data Architect
             </p>
-            <p class="mt-8 text-slate-300 text-sm md:text-base leading-relaxed max-w-3xl mx-auto border-l-2 border-emerald-500/50 pl-6 text-left italic">
-                "Eliminating structural and language barriers within complex geospatial frameworks. Transforming real-time orbital sensor array data directly into actionable land diagnostics for local farmers, private enterprise, sovereign ministries, and global NGOs to navigate climate variations, drought detection, and systemic flood risk management."
-            </p>
-            <div class="mt-10 flex flex-wrap gap-4 justify-center text-xs font-bold tracking-widest uppercase">
-                <a href="#documents-vault" class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded shadow-xl shadow-emerald-900/40 transition">Explore Geospatial Portals</a>
-                <a href="#contact-terminal" class="bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 px-8 py-4 rounded transition">Initiate Consultation Channels</a>
+            
+            <div class="mt-8 max-w-3xl mx-auto glass-panel p-6 rounded-2xl shadow-2xl text-left md:text-center">
+                <p class="text-emerald-400 font-medium text-base leading-relaxed">
+                    "Eliminating structural and language barriers within geospatial frameworks. Transforming real-time orbital sensor array data directly into actionable land diagnostics for local farmers, private companies, sovereign ministries, and global NGOs to navigate climate variations, drought detection, anticipation, and flood risk management."
+                </p>
+            </div>
+
+            <div class="mt-8 flex flex-wrap gap-4 justify-center">
+                <a href="#pdfs" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider px-6 py-3 rounded-lg transition shadow-lg shadow-emerald-900/40">Explore Technical Portfolios</a>
+                <a href="#contact" class="bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold uppercase tracking-wider px-6 py-3 rounded-lg transition border border-slate-700">Open Contact Channels</a>
             </div>
         </div>
     </section>
 
-    <!-- EDUCATION & DIPLOMATIC FIELD INTERVIEW ARCHITECTURE -->
-    <section id="about" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-900">
-        <div class="mb-16 border-l-2 border-emerald-500 pl-6">
-            <h2 class="text-xl font-bold tracking-widest uppercase text-white font-mono">Academic Merit & Cross-Cultural Diplomacy</h2>
-            <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Isolating system bottlenecks and calculating advanced hydrological system architectures.</p>
+    <!-- CREDENTIALS & DEBRIEF EXPERTISE -->
+    <section id="about" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-800">
+        <div class="mb-16 border-l-4 border-emerald-500 pl-4">
+            <h2 class="text-2xl font-bold uppercase tracking-wide text-white">Academic Merit & Cross-Cultural Diplomacy</h2>
+            <p class="text-xs text-slate-400 mt-1">Isolating system bottlenecks and calculating advanced hydrological system architectures.</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <!-- Academic Credentials -->
-            <div class="bg-slate-900/40 border border-slate-800/80 p-8 rounded-xl flex flex-col justify-between">
-                <div>
-                    <div class="text-emerald-400 text-2xl mb-4"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <h3 class="text-md font-bold text-white uppercase tracking-wider mb-2">Education & Curricular Mastery</h3>
-                    <p class="text-emerald-400 font-mono text-xs">Bachelor of Science in Water Resources and Irrigation Engineering</p>
-                    <p class="text-2xl font-black text-slate-200 mt-2">CGPA: 3.87 / 4.0 <span class="text-xs font-normal text-slate-500 font-mono">(96.75% Institutional Equivalence Rating)</span></p>
-                    
-                    <h4 class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mt-8 mb-4">Core Computational & Field Coursework Deployed:</h4>
-                    <ol class="space-y-2 text-xs text-slate-400 font-mono">
-                        <li><i class="fa-solid fa-chevron-right text-emerald-500 mr-2"></i>1. Geographic Information Systems (GIS) and Remote Sensing</li>
-                        <li><i class="fa-solid fa-chevron-right text-emerald-500 mr-2"></i>2. Irrigation Water Management Matrix Models</li>
-                        <li><i class="fa-solid fa-chevron-right text-emerald-500 mr-2"></i>3. Software Applications in Water Resources Engineering</li>
-                        <li><i class="fa-solid fa-chevron-right text-emerald-500 mr-2"></i>4. AutoCAD Applications in Irrigation Pipeline Design</li>
-                        <li><i class="fa-solid fa-chevron-right text-emerald-500 mr-2"></i>5. Strategic Project Planning and Infrastructure Management</li>
-                        <li><i class="fa-solid fa-chevron-right text-emerald-500 mr-2"></i>6. High-Efficiency Drip and Sprinkler Irrigation Systems</li>
-                        <li><i class="fa-solid fa-chevron-right text-emerald-500 mr-2"></i>7. Advanced Water Supply and Hydraulic Engineering</li>
-                    </ol>
-                </div>
+            <!-- University Degrees -->
+            <div class="bg-slate-950 p-8 rounded-2xl border border-slate-800/80 shadow-xl">
+                <div class="text-emerald-400 text-2xl mb-4"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h3 class="text-lg font-bold text-white uppercase tracking-wide">Education & Curricular Mastery</h3>
+                <p class="text-emerald-400 font-semibold text-sm mt-1">Bachelor of Science in Water Resources and Irrigation Engineering</p>
+                <p class="text-2xl font-extrabold text-slate-100 mt-2">CGPA: 3.87 / 4.0 <span class="text-xs font-normal text-slate-400 block sm:inline sm:ml-2">(96.75% Institutional Rating)</span></p>
+                
+                <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-500 mt-6 mb-3">Core Engineering Competencies Deployed:</h4>
+                <ul class="space-y-2 text-sm text-slate-400 border-t border-slate-800 pt-3">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-nodes text-emerald-500 text-xs"></i> 1. Geographic Information Systems (GIS) and Remote Sensing</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-droplet text-emerald-500 text-xs"></i> 2. Irrigation Water Management</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-laptop-code text-emerald-500 text-xs"></i> 3. Software Applications in Water Resources and Irrigation Engineering</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-compass-drafting text-emerald-500 text-xs"></i> 4. AutoCAD Applications in Water Resources and Irrigation Engineering</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-chart-gantt text-emerald-500 text-xs"></i> 5. Project Planning and Management</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-sprinkler text-emerald-500 text-xs"></i> 6. Drip and Sprinkler Irrigation Systems</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-faucet text-emerald-500 text-xs"></i> 7. Water Supply Engineering</li>
+                </ul>
             </div>
 
-            <!-- Stakeholder Engagement -->
-            <div class="bg-slate-900/40 border border-slate-800/80 p-8 rounded-xl flex flex-col justify-between">
+            <!-- Diplomacy Experience -->
+            <div class="bg-slate-950 p-8 rounded-2xl border border-slate-800/80 shadow-xl flex flex-col justify-between">
                 <div>
-                    <div class="text-blue-400 text-2xl mb-4"><i class="fa-solid fa-users-viewfinder"></i></div>
-                    <h3 class="text-md font-bold text-white uppercase tracking-wider mb-2">High-Sensitivity Cross-Border Operations</h3>
-                    <p class="text-xs text-slate-400 leading-relaxed font-mono mb-4">
-                        Extensive background working within complex geopolitical geographic zones alongside international stakeholders from the <span class="text-white font-bold">United Kingdom, Kenya, Ethiopia, Uganda, and South Africa</span>, navigating diverse and culturally sensitive structural frameworks.
+                    <div class="text-blue-400 text-2xl mb-4"><i class="fa-solid fa-earth-africa"></i></div>
+                    <h3 class="text-lg font-bold text-white uppercase tracking-wide">High-Sensitivity Cross-Border Frameworks</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mt-2">
+                        Extensive experience working inside highly sensitive geographical zones collaborating with multi-national stakeholders from the **UK, Kenya, Ethiopia, Uganda, and South Africa**, managing diverse and complex cultural frameworks.
+                    </p>
+                    <div class="mt-6 p-5 bg-slate-900 rounded-xl border border-blue-500/20 text-xs">
+                        <span class="font-bold text-blue-400 block uppercase tracking-wide"><i class="fa-solid fa-shield-halved mr-1"></i>British Home Office Training Deployment</span>
+                        <p class="text-slate-400 mt-1 leading-relaxed">Formally trained under the **British Home Office debrief interview technique**. Expertly formulated strategic open, closed, and deep probing interrogative frameworks to isolate root causes. Personal portfolio includes **conducting over 200 field interviews** to find challenge portfolios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE 6 IMAGES EXHIBITION FRAMEWORK -->
+    <section id="photos" class="py-24 px-6 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-12 text-center md:text-left">
